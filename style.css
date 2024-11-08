@@ -1,0 +1,162 @@
+/*======== GOOGLE FONTS ======*/
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header img {
+  width: 100px;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Be Vietnam Pro", sans-serif;
+  background: url("bg-image.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0px 32px;
+}
+
+.container {
+  text-align: center;
+  width: 890px;
+}
+
+.container h1 {
+  font-size: 64px;
+}
+
+.container p {
+  font-size: 32px;
+}
+
+.contact__form {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px 25px;
+  max-width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*======= Reusable CSS class======*/
+.inputs {
+  padding: 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  background: #f8fafc;
+  margin-right: 30px;
+  outline: none;
+}
+
+.contact__contents {
+  display: flex;
+  margin: 16px 0;
+  gap: 18px;
+  width: 100%;
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input,
+select,
+option,
+textarea,
+button {
+  font-family: "Be Vietnam Pro", sans-serif;
+  padding: 24px 22px;
+  border: 1px solid #f8fafc;
+  border-radius: 16px;
+  background-color: #f8fafc;
+  width: 100%;
+}
+
+input {
+  color: #cdd5e0;
+}
+
+select {
+  background-color: black; /* test pour voir si la couleur est appliquée */
+  background-image: url("down-arrow.svg") !important;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+textarea {
+  color: #000;
+  resize: none;
+}
+
+button {
+  background: #fff;
+  color: #4a00e0;
+  font-weight: 600;
+  padding: 20px 30px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+select,
+textarea::placeholder {
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 24px 0;
+  }
+
+  .contact-form {
+    max-width: 960px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+}

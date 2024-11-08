@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/contact-page/style.css" />
+
+    <title>Challenge 1</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <div class="header">
+      <img
+        src="assets/contact-page/contact-form-icon.svg"
+        class="header_logo"
+        alt="Compagny Logo"
+      />
+    </div>
+    <!--==================== CATCHPHRASE ====================-->
+
+    <div class="container">
+      <h1>
+        Interested in our <br />
+        business pricing?
+      </h1>
+      <p>
+        Fill out the form to view details <br />
+        and we’ll contact you as soon as possible.
+      </p>
+
+      <!--==================== CONTACT INPUT ====================-->
+      <div class="contact__form">
+        <form>
+          <div class="contact__contents">
+            <div class="contact__content">
+              <label for="name"> Name</label>
+              <input class="inputs" type="text" placeholder="Ethan Johnson" />
+            </div>
+            <div class="contact__content">
+              <label for="email">Company Email</label>
+              <input
+                class="inputs"
+                type="email"
+                placeholder="ethan@johnson.com"
+              />
+            </div>
+          </div>
+          <div class="contact__contents">
+            <div class="contact__content">
+              <label for="company"> Company size </label>
+              <select class="inputs">
+                <option value="1-10">1-10 employees</option>
+                <option value="10-50">10-50 employees</option>
+                <option value="50-100">50-100 employees</option>
+                <option value="100 and more">100 and more employees</option>
+              </select>
+            </div>
+            <div class="contact__content">
+              <label for="subject">Subject</label>
+              <select class="inputs">
+                <option value="Building">
+                  Building Landing pages
+                  <img src="assets/contact-page/Expand_down.svg" alt="" />
+                </option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="contact__content">
+            <label for="message">Message</label>
+            <textarea class="inputs" rows="4" placeholder="50-100 employees">
+50-100 employees</textarea
+            >
+          </div>
+          <button type="submit">Contact Sales</button>
+        </form>
+      </div>
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/contact-page/main.js"></script>
+  </body>
+</html>
